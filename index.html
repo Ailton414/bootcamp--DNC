@@ -7,17 +7,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!--MENU PRINCIPAL-->
     <nav id="principal">
-        <div id="menu">G
+        <div id="menu">
             <a href="">Home</a>
             <a href="">Ultimas Edições</a>
             <a href="">Requisitos para participar</a>
         </div>
         <button>login</button>
+    </nav> 
 
-    </nav>
-   
+    <!--SESSÃO DE PAGINA -->
+    <section>
 
-    
+        <header>
+
+            <!--TITULOS MAIS PARAGRAFO-->
+            <h1>bootcamp DNC</h1>
+            <h2>
+                Esse será um evento exclusivo para todos os alunos <br>
+                da <b>DNC</b> ,que querem <samp class="invert">acelerar a carreira</samp>  com uma <br>
+                semana intensiva de conteúdo de mercado entre <br>
+                <span class="invert">BAK-END,FRONT-END & BANCO DE DADOS</span> 
+            </h2>
+        </header>
+
+            <!--SESSÃO DO FORMULARIO-->
+            <form>
+
+                <!--PARTE 01-->
+                <div class="form-grupo">
+                    <label>Nome:</label>
+                    <input type="text" placeholder="Insira seu nome aqui" >
+                </div>
+
+                <!--PARTE 02-->
+                <div class="form-grupo">
+                    <label>Sobrenome:</label>
+                    <input type="text" placeholder="Insira seu Sobrenome aqui" >
+                </div>
+
+                <!--PARTE 03 DOS CHECKBOX DIVIDIDA EM 3 SESSÕES DIFERENTES-->
+                <div class="form-grupo">
+                    <label>Area de interesse:</label>
+                    <div class="checkbox-itens">
+
+                        <input type="checkbox" value="front">
+                        <label>Front-end</label>
+
+                        <input type="checkbox" value="back">
+                        <label>back-end</label>
+
+                        <input type="checkbox" value="BD">
+                        <label>banco de dados</label>
+                    </div>
+                </div>
+
+                <!--PARTE 04-->
+                <div class="form-grupo">
+                    <label>Email:</label>
+                    <input type="email" placeholder="Insira seu email aqui" >
+                </div>
+
+                <!--PARTE 04-->
+                <div class="form-grupo">
+                    <label>Telefone:</label>
+                    <input type="text" placeholder="(99) 99999-9999" >
+                </div>
+
+                <!--PARTE 06-->
+                <div class="form-grupo">
+                    <label>Insira uma frase criativa aqui:</label>
+                    <input type="text" placeholder="Qual frase criativa você gostaria de falar" >
+                </div>
+
+                <!--PARTE 07 BOTÃO DE CADRSYAR-->
+                <input type="submit" value="Cadrastar">
+            </form>
+
+       
+    </section>
 </body>
 </html>
