@@ -271,25 +271,60 @@ section{
 
    /*PARTE EM DESENVOLVIMENTO*/
 
-   /*
+   
 
    @media only screen and (max-width: 600px){
+    
+    /*MENU*/
     #principal{
     
         flex-direction: column;
+        height: auto;
+        
     }
     #menu{
         flex-direction: column;
         width: 100%;
+        margin: 0px;
+        text-align: center;
     }
 
     #menu a{
         display: flex;
-        height: 50px;
-        align-items: center;
-        
+        align-items: center; 
+        height:50px;
+      
     }
+
+    #principal button{
+        width: 100%;
+        margin: 0px;
+
+    }
+
+    section h1{
+        font-size: 38px;
+
+    }
+    section h2{
+        font-size: 28px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    form{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-itens label{
+        font-size: 17px;
+    }
+
+
+
+
    }
 
-   */
+   
 
