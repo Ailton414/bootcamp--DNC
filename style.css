@@ -269,13 +269,12 @@ section{
     border-right: 3px solid white;
    }
 
-   /*PARTE EM DESENVOLVIMENTO*/
-
-   
+   /*PARTE DE RESPONSIVIDADE */
 
    @media only screen and (max-width: 600px){
     
     /*MENU*/
+
     #principal{
     
         flex-direction: column;
@@ -306,6 +305,7 @@ section{
         font-size: 38px;
 
     }
+
     section h2{
         font-size: 28px;
         padding-left: 15px;
@@ -321,8 +321,16 @@ section{
         font-size: 17px;
     }
 
+    /*FOOter*/
 
+    footer .linha1{
+        flex-direction: column;
+    }
 
+     footer .endereco{
+        width: 95%;
+        margin-bottom: 20px;
+     }
 
    }
 
