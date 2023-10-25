@@ -1,0 +1,338 @@
+/*INPORTAÇÃO DE FONTE DO GOOGLE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+/*ROOT PSEUDO CLASSE PARA DEFINIR VARIAVEIS DENTRO DO CSS*/
+
+:root{
+    --azul-dnc:#0C70F2;
+    --preto-dnc:#303030;
+    --cinza-hover:#C9C9C9;
+
+    --fonte-padrao:'Inter';
+}
+
+/*ZERANDO AS MAGENS E PADDING DA FOLHA TODA*/
+
+body{
+    margin: 0px;/* Margem Externa*/
+    padding: 0px;/* Magen Interna*/
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;/*PROPRIEDADE PARA FAZER DEGRADE NA COR*/
+    background-repeat: no-repeat;
+}
+
+/* MENU PRINCIPAL*/
+
+#principal{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    background-color:var(--preto-dnc); /*APLICAÇÃO DA VARIAVEL DEFINIDA NO ROOT:*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10x #bababa;
+}
+
+#menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;/* Trabalha o alinhamento vertical do itens*/
+    margin-left: 5%;
+}
+
+#principal div a{
+    font-family:var(--fonte-padrao);
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+  #principal div a:hover{
+    color:var(--cinza-hover);
+  }
+
+#principal button{
+    margin-right: 5%;
+    background-color:var(--azul-dnc);
+    border: 0px;
+    height: 40px;
+    width: 80px;
+    font-size:20px;
+    font-weight: 600;
+    font-family:var(--fonte-padrao);
+    color: white;
+    box-shadow: 3px 2px 4px rgb(12, 112,242,0.25);
+    cursor: pointer;
+}
+
+/*ANIMAÇÃO BOTÃO DE LOGIN*/
+
+#principal button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+/*SEÇÃO PRINCIPAL DO SITE*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   }
+
+   header{
+    color: white;
+    font-family: var(--fonte-padrao);
+   }
+
+   header h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+
+   header h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 100px;
+   }
+
+   header .invert{
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+   }
+
+   /*ESTILIZAÇÃO DO FORMULARIO*/
+
+   form{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+   }
+
+   .form-grupo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+
+   form input{
+    border-radius: 10px;
+    height: 30px;
+    border: 0px;
+    font-size: 20px;
+    padding: 10px;
+    background-color:  rgba(255, 255, 255, 0.90);;
+   }
+
+   form label{
+    margin: 10px 0px 10px 0px ;
+   }
+
+   /*SELETORES DA CLASSE PSEUDO-ELEMENTO*/
+
+   form input ::placeholder{
+    color: rgba(57, 57, 57, 0.50);
+   }
+
+   .checkbox-itens label{
+    font-size: 25px;
+   }
+
+   .checkbox-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   /*SELETORES DE SUB ELEMENTO*/
+
+   input[type="checkbox"]{
+    transform: scale(1.7);
+   }
+   input[type="submit"]{
+    background: rgba(12, 112, 242, 0.90);
+    width: 100%;
+    height: 56px;
+    font-size: 32px;
+    color: white;
+    margin-top: 100px;
+    box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+   }
+
+   input[type="submit"]:hover{
+    transform: translateY(-7px);
+    transition-duration: 0.8s;
+   }
+
+   /* ESTILIZAÇÃO DA PARTE FOOTER*/
+
+   footer{
+    width: 100%;
+    background: #0C70F2;
+   }
+
+   footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+   }
+
+   footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+   }
+
+   footer h5{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: var(--fonte-padrao);
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+   }
+
+   footer ul li{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    margin: 20px 0px 20px 0px;
+   }
+
+   footer ul li a{
+    color: white;
+    text-decoration: none;
+   }
+
+   footer ul li a:hover{
+    color: var(--cinza-hover);
+   }
+   
+   footer .endereco{
+    font-weight: 600;
+   font-size: 18px;
+   font-family: var(--fonte-padrao);
+   color: white;
+   text-align: center;
+   width: 30%;
+   }
+
+   footer .linha2{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    padding: 10px;
+   }
+
+   footer .linha2 a{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+   }
+
+   footer .linha2 a:hover{
+    color: var(--cinza-hover);
+   }
+
+   footer .linha2 a:first-child{
+    border-right: 3px solid white;
+   }
+
+   /*PARTE DE RESPONSIVIDADE */
+
+   @media only screen and (max-width: 600px){
+    
+    /*MENU*/
+
+    #principal{
+    
+        flex-direction: column;
+        height: auto;
+        
+    }
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    #menu a{
+        display: flex;
+        align-items: center; 
+        height:50px;
+      
+    }
+
+    #principal button{
+        width: 100%;
+        margin: 0px;
+
+    }
+
+    section h1{
+        font-size: 38px;
+
+    }
+
+    section h2{
+        font-size: 28px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    form{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-itens label{
+        font-size: 17px;
+    }
+
+    /*FOOTER*/
+
+    footer .linha1{
+        flex-direction: column;
+    }
+
+     footer .endereco{
+        width: 95%;
+        margin-bottom: 20px;
+     }
+
+   }
+
+   
+
